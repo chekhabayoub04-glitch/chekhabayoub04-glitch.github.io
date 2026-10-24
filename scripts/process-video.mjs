@@ -128,7 +128,7 @@ function scrubFrames(file, name, fps) {
     const fdir = path.join(OUT.frames, key === "desktop" ? name : `${name}-mobile`);
     fs.rmSync(fdir, { recursive: true, force: true });
     fs.mkdirSync(fdir, { recursive: true });
-    run(FFMPEG, ["-hide_banner", "-y", "-i", file, "-an", "-vf", `fps=${fps},scale=${w}:${h}:flags=lanczos`, "-c:v", "libwebp", "-quality", "60", "-compression_level", "6", path.join(fdir, "f_%04d.webp")]);
+    run(FFMPEG, ["-hide_banner", "-y", "-i", file, "-an", "-vf", `fps=${fps},scale=${w}:${h}:flags=lanczos,unsharp=5:5:0.55`, "-c:v", "libwebp", "-quality", "64", "-compression_level", "6", path.join(fdir, "f_%04d.webp")]);
     const files = fs.readdirSync(fdir).filter((f) => f.endsWith(".webp"));
     const bytes = files.reduce((n, f) => n + fs.statSync(path.join(fdir, f)).size, 0);
     frames[key] = { base: publicUrl(fdir), pattern: "f_{index}.webp", indexPad: 4, startIndex: 1, count: files.length, fps, width: w, height: h, totalBytes: bytes };

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T17:17:38.625Z",
+  "generatedAt": "2026-10-24T20:01:45.067Z",
   "publicBase": "/media",
   "source": {
     "file": "assets/video/raw/source.mp4",
@@ -59,7 +59,7 @@
         "fps": 20,
         "width": 1280,
         "height": 720,
-        "totalBytes": 5740518
+        "totalBytes": 6858890
       },
       "mobile": {
         "base": "/media/frames/hero-mobile",
@@ -70,7 +70,7 @@
         "fps": 20,
         "width": 854,
         "height": 480,
-        "totalBytes": 3595908
+        "totalBytes": 4470938
       }
     },
     "poster": {
@@ -94,7 +94,7 @@
         "fps": 20,
         "width": 1280,
         "height": 720,
-        "totalBytes": 6696092
+        "totalBytes": 7936724
       },
       "mobile": {
         "base": "/media/frames/tour-mobile",
@@ -105,7 +105,7 @@
         "fps": 20,
         "width": 854,
         "height": 480,
-        "totalBytes": 4232138
+        "totalBytes": 5271896
       }
     },
     "poster": {
