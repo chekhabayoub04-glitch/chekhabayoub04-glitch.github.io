@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "@/i18n/navigation";
-import { canAutoplayVideo, isDesktop, prefersReducedMotion } from "@/lib/motion";
+import { canAutoplayVideo, prefersReducedMotion } from "@/lib/motion";
 import { createFramePlayer } from "@/lib/frames";
 import { frameUrl, type Tour } from "@/lib/video";
 import { IconArrow, IconClock, IconPin, SERVICE_ICONS } from "./Icons";
@@ -45,9 +45,9 @@ export default function ShowroomTour({ tour, services, hours, address, copy }: {
   useEffect(() => {
     if (!scrub || !outer.current || !canvas.current || !stage.current) return;
     gsap.registerPlugin(ScrollTrigger);
-    const frames = isDesktop() ? tour.frames.desktop : tour.frames.mobile;
+    const frames = tour.frames.desktop; // full resolution on phones too (they crop the centre)
     const urls = Array.from({ length: frames.count }, (_, i) => frameUrl(frames, i));
-    const player = createFramePlayer(canvas.current, urls, { concurrency: canAutoplayVideo() ? 6 : 2 });
+    const player = createFramePlayer(canvas.current, urls, { concurrency: canAutoplayVideo() ? 6 : 2, maxDpr: 2 });
     player.resize();
     const onResize = () => player.resize();
     window.addEventListener("resize", onResize);
@@ -80,7 +80,8 @@ export default function ShowroomTour({ tour, services, hours, address, copy }: {
     };
     // The intro is visible on arrival; it only leaves.
     tl.to(q("[data-p='intro']"), { opacity: 0, y: -40, filter: "blur(8px)", duration: 0.04, ease: "power1.in" }, slot - 0.03);
-    services.forEach((_, i) => show(`[data-p='s${i}']`, slot * (i + 1), slot - 0.06));
+    // Each panel starts leaving just before the next arrives, so there is never an empty screen.
+    services.forEach((_, i) => show(`[data-p='s${i}']`, slot * (i + 1), slot - 0.025));
     show("[data-p='visit']", slot * (n + 1), 0, true);
     tl.fromTo(q("[data-rail]"), { opacity: 0 }, { opacity: 1, duration: 0.03 }, slot - 0.02).to(q("[data-rail]"), { opacity: 0, duration: 0.03 }, slot * (n + 1) - 0.02);
     player.render(0);
@@ -110,6 +111,7 @@ export default function ShowroomTour({ tour, services, hours, address, copy }: {
         </div>
         <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_right,rgba(10,10,11,.88),rgba(10,10,11,.35)_55%,rgba(10,10,11,.15))] rtl:bg-[linear-gradient(to_left,rgba(10,10,11,.88),rgba(10,10,11,.35)_55%,rgba(10,10,11,.15))]" />
         <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_top,rgba(10,10,11,.85),transparent_35%),linear-gradient(to_bottom,rgba(10,10,11,.7),transparent_25%)]" />
+        <div aria-hidden className="absolute inset-0 bg-ink/45 lg:hidden" />
         <div aria-hidden className="grain absolute inset-0" />
 
         {/* Intro */}

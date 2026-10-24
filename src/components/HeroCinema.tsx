@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "@/i18n/navigation";
-import { canAutoplayVideo, isDesktop, prefersReducedMotion } from "@/lib/motion";
+import { canAutoplayVideo, prefersReducedMotion } from "@/lib/motion";
 import { createFramePlayer } from "@/lib/frames";
 import { frameUrl, type Hero } from "@/lib/video";
 import { IconArrow, IconWhatsApp } from "./Icons";
@@ -70,9 +70,10 @@ export default function HeroCinema({ hero, brands, copy, whatsapp }: { hero: Her
   useEffect(() => {
     if (!scrub || !outer.current || !canvas.current || !stage.current) return;
     gsap.registerPlugin(ScrollTrigger);
-    const frames = isDesktop() ? seq.desktop : seq.mobile;
+    // Full 1280px frames everywhere: phones crop the centre of a 16:9 film, so they need every pixel.
+    const frames = seq.desktop;
     const urls = Array.from({ length: frames.count }, (_, i) => frameUrl(frames, i));
-    const player = createFramePlayer(canvas.current, urls, { concurrency: canAutoplayVideo() ? 6 : 2 });
+    const player = createFramePlayer(canvas.current, urls, { concurrency: canAutoplayVideo() ? 6 : 2, maxDpr: 2 });
     player.resize();
     // Defer the 200-frame download until the visitor shows intent (or the page is idle),
     // so the first paint (poster + headline) never competes with it.
@@ -167,21 +168,20 @@ export default function HeroCinema({ hero, brands, copy, whatsapp }: { hero: Her
   };
 
   const first = frameUrl(seq.desktop, 0);
-  const firstMobile = frameUrl(seq.mobile, 0);
 
   return (
     <section ref={outer} aria-labelledby="hero-title" className="relative h-[460svh] motion-reduce:h-auto">
       <div ref={stage} className="sticky top-0 h-svh overflow-hidden motion-reduce:relative motion-reduce:h-auto">
         {/* Film */}
         <div ref={drift} aria-hidden className="absolute inset-0 will-change-transform [transform:scale(1.07)]">
-          <picture>
-            <source media="(min-width: 1024px)" srcSet={first} />
-            <img src={firstMobile} alt="" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
-          </picture>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={first} alt="" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
           <canvas ref={canvas} role="img" aria-label={copy.videoLabel} className="absolute inset-0 h-full w-full" />
         </div>
         <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_top,rgba(10,10,11,.9)_0%,rgba(10,10,11,.35)_42%,rgba(10,10,11,0)_68%),linear-gradient(to_bottom,rgba(10,10,11,.6),transparent_22%)]" />
         <div aria-hidden className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_45%,transparent_45%,rgba(10,10,11,.6)_85%)]" />
+        {/* Phones: the bright sign sits behind the headline — a deeper scrim keeps the text legible */}
+        <div aria-hidden data-a className="absolute inset-0 bg-[linear-gradient(to_top,#0a0a0b_0%,rgba(10,10,11,.92)_40%,rgba(10,10,11,.6)_62%,rgba(10,10,11,.1)_82%)] lg:hidden" />
         <div aria-hidden data-dim className="absolute inset-0 bg-ink opacity-0" />
         <div aria-hidden className="grain absolute inset-0" />
 
@@ -234,7 +234,7 @@ export default function HeroCinema({ hero, brands, copy, whatsapp }: { hero: Her
           <h1
             id="hero-title"
             data-a
-            className="mt-5 max-w-[19ch] text-[clamp(42px,5.6vw,100px)] font-black leading-[1.05] tracking-[-.015em] ltr:max-w-[22ch] ltr:font-display ltr:text-[clamp(46px,5.8vw,104px)] ltr:uppercase ltr:leading-[.92]"
+            className="mt-4 max-w-[19ch] text-[36px] font-black leading-[1.08] tracking-[-.01em] [text-shadow:0_2px_24px_rgba(0,0,0,.55)] sm:mt-5 sm:text-[clamp(42px,5.6vw,100px)] ltr:max-w-[22ch] ltr:font-display ltr:text-[42px] ltr:uppercase ltr:leading-[.95] ltr:sm:text-[clamp(46px,5.8vw,104px)] lg:[text-shadow:none]"
           >
             <Words text={copy.line1} from={0.2} /> <Words text={copy.line2} from={0.2 + lineCount(copy.line1) * STEP} />{" "}
             <span className="word" style={delay(0.2 + (lineCount(copy.line1) + lineCount(copy.line2)) * STEP)}>
@@ -243,7 +243,7 @@ export default function HeroCinema({ hero, brands, copy, whatsapp }: { hero: Her
             </span>
           </h1>
           <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <p data-a className="max-w-[40ch] text-base leading-8 text-bone/80 lg:text-lg">
+            <p data-a className="max-w-[40ch] text-[15px] leading-7 text-bone/90 sm:text-base sm:leading-8 lg:text-lg">
               {copy.lede}
             </p>
             <div data-a className="fade-up grid gap-3 sm:flex" style={delay(0.6)}>
