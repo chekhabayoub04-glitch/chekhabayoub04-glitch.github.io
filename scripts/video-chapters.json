@@ -1,0 +1,89 @@
+{
+  "source": "assets/video/raw/source.mp4",
+  "chapters": [
+    {
+      "id": "ch1-exterior",
+      "start": 0.0,
+      "end": 9.4,
+      "section": "hero",
+      "scrub": false,
+      "label": "Showroom facade & Dacia Duster lineup"
+    },
+    {
+      "id": "ch2-golf",
+      "start": 10.1,
+      "end": 15.3,
+      "section": "build",
+      "scrub": false,
+      "label": "VW Golf under hex lights, headlights ignite"
+    },
+    {
+      "id": "ch3-moto",
+      "start": 16.8,
+      "end": 20.6,
+      "section": "gallery",
+      "scrub": false,
+      "label": "Yamaha R1"
+    },
+    {
+      "id": "ch4-jetski",
+      "start": 21.0,
+      "end": 25.6,
+      "section": "gallery",
+      "scrub": false,
+      "label": "Jet ski"
+    },
+    {
+      "id": "ch5-suv",
+      "start": 26.0,
+      "end": 32.2,
+      "section": "build",
+      "scrub": false,
+      "label": "Black VW SUV, light bar"
+    },
+    {
+      "id": "ch6-interior",
+      "start": 33.0,
+      "end": 39.8,
+      "section": "inside",
+      "scrub": false,
+      "label": "Cockpit, ambient lighting"
+    },
+    {
+      "id": "ch7-walkthrough",
+      "start": 40.2,
+      "end": 46.5,
+      "section": "showroom",
+      "scrub": false,
+      "label": "Showroom walkthrough"
+    }
+  ],
+  "hero": {
+    "file": "assets/video/raw/hero-landscape.mp4",
+    "poster": 2.6,
+    "fade": {
+      "in": 0.5,
+      "out": 0.7
+    },
+    "segments": [
+      {
+        "id": "facade",
+        "start": 0
+      },
+      {
+        "id": "sign",
+        "start": 3.3
+      },
+      {
+        "id": "showroom",
+        "start": 5.8
+      }
+    ],
+    "frameFps": 20
+  },
+  "tour": {
+    "file": "assets/video/raw/showroom-landscape.mp4",
+    "poster": 0.2,
+    "frameFps": 20
+  }
+}

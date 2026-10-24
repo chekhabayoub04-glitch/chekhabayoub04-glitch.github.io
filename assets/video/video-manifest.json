@@ -1,0 +1,498 @@
+{
+  "generatedAt": "2026-10-24T17:17:38.625Z",
+  "publicBase": "/media",
+  "source": {
+    "file": "assets/video/raw/source.mp4",
+    "width": 576,
+    "height": 1024,
+    "duration": 46.578,
+    "bytes": 3704504,
+    "audio": "stripped"
+  },
+  "strategy": {
+    "orientation": "Hero: 16:9 film, object-cover on every screen. Chapters: source is 9:16 — mobile native portrait; desktop scrub frames smart-reframed to 16:9 (scripts/video-reframe.json).",
+    "maxHeight": 1024
+  },
+  "hero": {
+    "duration": 10.006,
+    "width": 1280,
+    "height": 720,
+    "segments": [
+      {
+        "id": "facade",
+        "start": 0
+      },
+      {
+        "id": "sign",
+        "start": 3.3
+      },
+      {
+        "id": "showroom",
+        "start": 5.8
+      }
+    ],
+    "sources": [
+      {
+        "src": "/media/chapters/hero/hero-720.webm",
+        "type": "video/webm; codecs=\"vp9\"",
+        "width": 1280,
+        "height": 720,
+        "duration": 10,
+        "bytes": 2064016
+      },
+      {
+        "src": "/media/chapters/hero/hero-720.mp4",
+        "type": "video/mp4",
+        "width": 1280,
+        "height": 720,
+        "duration": 10,
+        "bytes": 2853992
+      }
+    ],
+    "frames": {
+      "desktop": {
+        "base": "/media/frames/hero",
+        "pattern": "f_{index}.webp",
+        "indexPad": 4,
+        "startIndex": 1,
+        "count": 200,
+        "fps": 20,
+        "width": 1280,
+        "height": 720,
+        "totalBytes": 5740518
+      },
+      "mobile": {
+        "base": "/media/frames/hero-mobile",
+        "pattern": "f_{index}.webp",
+        "indexPad": 4,
+        "startIndex": 1,
+        "count": 200,
+        "fps": 20,
+        "width": 854,
+        "height": 480,
+        "totalBytes": 3595908
+      }
+    },
+    "poster": {
+      "webp": "/media/posters/hero.webp",
+      "avif": "/media/posters/hero.avif",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "tour": {
+    "duration": 10.006,
+    "width": 1280,
+    "height": 720,
+    "frames": {
+      "desktop": {
+        "base": "/media/frames/tour",
+        "pattern": "f_{index}.webp",
+        "indexPad": 4,
+        "startIndex": 1,
+        "count": 200,
+        "fps": 20,
+        "width": 1280,
+        "height": 720,
+        "totalBytes": 6696092
+      },
+      "mobile": {
+        "base": "/media/frames/tour-mobile",
+        "pattern": "f_{index}.webp",
+        "indexPad": 4,
+        "startIndex": 1,
+        "count": 200,
+        "fps": 20,
+        "width": 854,
+        "height": 480,
+        "totalBytes": 4232138
+      }
+    },
+    "poster": {
+      "webp": "/media/posters/tour.webp",
+      "avif": "/media/posters/tour.avif",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "chapters": [
+    {
+      "id": "ch1-exterior",
+      "section": "hero",
+      "label": "Showroom facade & Dacia Duster lineup",
+      "sourceRange": {
+        "start": 0,
+        "end": 9.4
+      },
+      "duration": 9.4,
+      "orientation": "portrait",
+      "aspectRatio": "576/1024",
+      "sources": [
+        {
+          "src": "/media/chapters/ch1-exterior/ch1-exterior-1024.mp4",
+          "type": "video/mp4",
+          "width": 576,
+          "height": 1024,
+          "bytes": 1487597
+        },
+        {
+          "src": "/media/chapters/ch1-exterior/ch1-exterior-1024.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 576,
+          "height": 1024,
+          "bytes": 2098860
+        },
+        {
+          "src": "/media/chapters/ch1-exterior/ch1-exterior-640.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 360,
+          "height": 640,
+          "bytes": 935720
+        },
+        {
+          "src": "/media/chapters/ch1-exterior/ch1-exterior-640.mp4",
+          "type": "video/mp4",
+          "width": 360,
+          "height": 640,
+          "bytes": 962618
+        }
+      ],
+      "poster": {
+        "webp": "/media/posters/ch1-exterior.webp",
+        "avif": "/media/posters/ch1-exterior.avif",
+        "blur": "/media/posters/ch1-exterior-blur.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": {
+          "webp": 63632,
+          "avif": 44702,
+          "blur": 784
+        }
+      }
+    },
+    {
+      "id": "ch2-golf",
+      "section": "build",
+      "label": "VW Golf under hex lights, headlights ignite",
+      "sourceRange": {
+        "start": 10.1,
+        "end": 15.3
+      },
+      "duration": 5.2,
+      "orientation": "portrait",
+      "aspectRatio": "576/1024",
+      "sources": [
+        {
+          "src": "/media/chapters/ch2-golf/ch2-golf-1024.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 576,
+          "height": 1024,
+          "bytes": 639160
+        },
+        {
+          "src": "/media/chapters/ch2-golf/ch2-golf-1024.mp4",
+          "type": "video/mp4",
+          "width": 576,
+          "height": 1024,
+          "bytes": 651513
+        },
+        {
+          "src": "/media/chapters/ch2-golf/ch2-golf-640.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 360,
+          "height": 640,
+          "bytes": 287851
+        },
+        {
+          "src": "/media/chapters/ch2-golf/ch2-golf-640.mp4",
+          "type": "video/mp4",
+          "width": 360,
+          "height": 640,
+          "bytes": 315087
+        }
+      ],
+      "poster": {
+        "webp": "/media/posters/ch2-golf.webp",
+        "avif": "/media/posters/ch2-golf.avif",
+        "blur": "/media/posters/ch2-golf-blur.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": {
+          "webp": 40840,
+          "avif": 28545,
+          "blur": 628
+        }
+      }
+    },
+    {
+      "id": "ch3-moto",
+      "section": "gallery",
+      "label": "Yamaha R1",
+      "sourceRange": {
+        "start": 16.8,
+        "end": 20.6
+      },
+      "duration": 3.8,
+      "orientation": "portrait",
+      "aspectRatio": "576/1024",
+      "sources": [
+        {
+          "src": "/media/chapters/ch3-moto/ch3-moto-1024.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 576,
+          "height": 1024,
+          "bytes": 340775
+        },
+        {
+          "src": "/media/chapters/ch3-moto/ch3-moto-1024.mp4",
+          "type": "video/mp4",
+          "width": 576,
+          "height": 1024,
+          "bytes": 402063
+        },
+        {
+          "src": "/media/chapters/ch3-moto/ch3-moto-640.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 360,
+          "height": 640,
+          "bytes": 155352
+        },
+        {
+          "src": "/media/chapters/ch3-moto/ch3-moto-640.mp4",
+          "type": "video/mp4",
+          "width": 360,
+          "height": 640,
+          "bytes": 207788
+        }
+      ],
+      "poster": {
+        "webp": "/media/posters/ch3-moto.webp",
+        "avif": "/media/posters/ch3-moto.avif",
+        "blur": "/media/posters/ch3-moto-blur.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": {
+          "webp": 35174,
+          "avif": 27131,
+          "blur": 634
+        }
+      }
+    },
+    {
+      "id": "ch4-jetski",
+      "section": "gallery",
+      "label": "Jet ski",
+      "sourceRange": {
+        "start": 21,
+        "end": 25.6
+      },
+      "duration": 4.6,
+      "orientation": "portrait",
+      "aspectRatio": "576/1024",
+      "sources": [
+        {
+          "src": "/media/chapters/ch4-jetski/ch4-jetski-1024.mp4",
+          "type": "video/mp4",
+          "width": 576,
+          "height": 1024,
+          "bytes": 543007
+        },
+        {
+          "src": "/media/chapters/ch4-jetski/ch4-jetski-1024.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 576,
+          "height": 1024,
+          "bytes": 669423
+        },
+        {
+          "src": "/media/chapters/ch4-jetski/ch4-jetski-640.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 360,
+          "height": 640,
+          "bytes": 288253
+        },
+        {
+          "src": "/media/chapters/ch4-jetski/ch4-jetski-640.mp4",
+          "type": "video/mp4",
+          "width": 360,
+          "height": 640,
+          "bytes": 309339
+        }
+      ],
+      "poster": {
+        "webp": "/media/posters/ch4-jetski.webp",
+        "avif": "/media/posters/ch4-jetski.avif",
+        "blur": "/media/posters/ch4-jetski-blur.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": {
+          "webp": 35250,
+          "avif": 27842,
+          "blur": 572
+        }
+      }
+    },
+    {
+      "id": "ch5-suv",
+      "section": "build",
+      "label": "Black VW SUV, light bar",
+      "sourceRange": {
+        "start": 26,
+        "end": 32.2
+      },
+      "duration": 6.2,
+      "orientation": "portrait",
+      "aspectRatio": "576/1024",
+      "sources": [
+        {
+          "src": "/media/chapters/ch5-suv/ch5-suv-1024.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 576,
+          "height": 1024,
+          "bytes": 1123274
+        },
+        {
+          "src": "/media/chapters/ch5-suv/ch5-suv-1024.mp4",
+          "type": "video/mp4",
+          "width": 576,
+          "height": 1024,
+          "bytes": 1294183
+        },
+        {
+          "src": "/media/chapters/ch5-suv/ch5-suv-640.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 360,
+          "height": 640,
+          "bytes": 495426
+        },
+        {
+          "src": "/media/chapters/ch5-suv/ch5-suv-640.mp4",
+          "type": "video/mp4",
+          "width": 360,
+          "height": 640,
+          "bytes": 525258
+        }
+      ],
+      "poster": {
+        "webp": "/media/posters/ch5-suv.webp",
+        "avif": "/media/posters/ch5-suv.avif",
+        "blur": "/media/posters/ch5-suv-blur.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": {
+          "webp": 50124,
+          "avif": 37367,
+          "blur": 614
+        }
+      }
+    },
+    {
+      "id": "ch6-interior",
+      "section": "inside",
+      "label": "Cockpit, ambient lighting",
+      "sourceRange": {
+        "start": 33,
+        "end": 39.8
+      },
+      "duration": 6.8,
+      "orientation": "portrait",
+      "aspectRatio": "576/1024",
+      "sources": [
+        {
+          "src": "/media/chapters/ch6-interior/ch6-interior-1024.mp4",
+          "type": "video/mp4",
+          "width": 576,
+          "height": 1024,
+          "bytes": 390270
+        },
+        {
+          "src": "/media/chapters/ch6-interior/ch6-interior-1024.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 576,
+          "height": 1024,
+          "bytes": 410373
+        },
+        {
+          "src": "/media/chapters/ch6-interior/ch6-interior-640.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 360,
+          "height": 640,
+          "bytes": 171295
+        },
+        {
+          "src": "/media/chapters/ch6-interior/ch6-interior-640.mp4",
+          "type": "video/mp4",
+          "width": 360,
+          "height": 640,
+          "bytes": 240567
+        }
+      ],
+      "poster": {
+        "webp": "/media/posters/ch6-interior.webp",
+        "avif": "/media/posters/ch6-interior.avif",
+        "blur": "/media/posters/ch6-interior-blur.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": {
+          "webp": 27334,
+          "avif": 21007,
+          "blur": 490
+        }
+      }
+    },
+    {
+      "id": "ch7-walkthrough",
+      "section": "showroom",
+      "label": "Showroom walkthrough",
+      "sourceRange": {
+        "start": 40.2,
+        "end": 46.5
+      },
+      "duration": 6.3,
+      "orientation": "portrait",
+      "aspectRatio": "576/1024",
+      "sources": [
+        {
+          "src": "/media/chapters/ch7-walkthrough/ch7-walkthrough-1024.mp4",
+          "type": "video/mp4",
+          "width": 576,
+          "height": 1024,
+          "bytes": 846939
+        },
+        {
+          "src": "/media/chapters/ch7-walkthrough/ch7-walkthrough-1024.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 576,
+          "height": 1024,
+          "bytes": 1012988
+        },
+        {
+          "src": "/media/chapters/ch7-walkthrough/ch7-walkthrough-640.webm",
+          "type": "video/webm; codecs=\"vp9\"",
+          "width": 360,
+          "height": 640,
+          "bytes": 439309
+        },
+        {
+          "src": "/media/chapters/ch7-walkthrough/ch7-walkthrough-640.mp4",
+          "type": "video/mp4",
+          "width": 360,
+          "height": 640,
+          "bytes": 444478
+        }
+      ],
+      "poster": {
+        "webp": "/media/posters/ch7-walkthrough.webp",
+        "avif": "/media/posters/ch7-walkthrough.avif",
+        "blur": "/media/posters/ch7-walkthrough-blur.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": {
+          "webp": 51122,
+          "avif": 34451,
+          "blur": 570
+        }
+      }
+    }
+  ]
+}

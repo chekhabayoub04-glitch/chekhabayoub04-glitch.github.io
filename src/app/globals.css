@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0a0b;
+  --color-surface: #131315;
+  --color-raised: #1b1b1e;
+  --color-line: #2a2a2e;
+  --color-bone: #eeeae3;
+  --color-mute: #a29e97;
+  --color-signal: #d42e24;
+  --color-signal-hi: #ff5b4d;
+  --color-hex: #dde6f0;
+  --color-wa: #25d366;
+
+  --font-display: var(--font-big-shoulders), var(--font-cairo), system-ui, sans-serif;
+  --font-sans: var(--font-archivo), var(--font-cairo), system-ui, sans-serif;
+  --font-ar: var(--font-cairo), system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-ink);
+    color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+  }
+  /* No body background: the fixed film (z -10) must show through; html paints the base colour. */
+  body {
+    color: var(--color-bone);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  html[lang="ar"] body {
+    font-family: var(--font-ar);
+  }
+  ::selection {
+    background: var(--color-signal);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-signal-hi);
+    outline-offset: 3px;
+  }
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  /* Content veil over the background film: the film keeps glowing faintly behind every section. */
+  .veil {
+    background: linear-gradient(to bottom, rgb(10 10 11 / 0.7), rgb(10 10 11 / 0.9) 70vh);
+  }
+  .container-x {
+    padding-inline: clamp(16px, 4vw, 56px);
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--color-mute);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: var(--color-signal);
+  }
+  .index-tag {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: var(--color-signal-hi);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 12px 22px;
+    font-weight: 700;
+    font-size: 15px;
+    white-space: nowrap;
+    transition:
+      background-color 0.25s,
+      color 0.25s,
+      border-color 0.25s,
+      transform 0.25s var(--ease-out-expo);
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  .btn-primary {
+    background: var(--color-signal);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: #cf2b20;
+  }
+  .btn-ghost {
+    border: 1px solid #45454b;
+    color: var(--color-bone);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-bone);
+  }
+  .btn-wa {
+    background: var(--color-wa);
+    color: #062b14;
+  }
+  .btn-wa:hover {
+    background: #1fbd59;
+  }
+  .glow-text {
+    color: #fff;
+    text-shadow:
+      0 0 18px rgba(221, 230, 240, 0.55),
+      0 0 60px rgba(221, 230, 240, 0.25);
+  }
+  .hex-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cpath d='M28 0 56 16v32L28 64 0 48V16zM28 64v33' fill='none' stroke='%23DDE6F0' stroke-width='1.2'/%3E%3C/svg%3E");
+  }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .field {
+    width: 100%;
+    min-height: 48px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    padding: 12px 14px;
+    color: var(--color-bone);
+    transition: border-color 0.2s;
+  }
+  .field:hover {
+    border-color: #3a3a40;
+  }
+  .field:focus {
+    border-color: var(--color-bone);
+    outline: none;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid var(--color-line);
+    font-size: 14px;
+    color: var(--color-mute);
+    transition:
+      color 0.2s,
+      border-color 0.2s,
+      background-color 0.2s;
+  }
+  .chip:hover {
+    color: var(--color-bone);
+    border-color: #45454b;
+  }
+  .chip[aria-pressed="true"] {
+    color: var(--color-ink);
+    background: var(--color-bone);
+    border-color: var(--color-bone);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes pulse-dot {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Hero entrance (CSS-only so it never delays first paint) */
+@keyframes word-rise {
+  from {
+    transform: translateY(55%) rotate(5deg);
+    clip-path: inset(0 0 100% 0);
+    filter: blur(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    clip-path: inset(-25% -25% -25% -25%);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.word {
+  display: inline-block;
+  animation: word-rise 1.3s var(--ease-out-expo) backwards;
+}
+[dir="rtl"] .word {
+  animation-name: word-rise-rtl;
+}
+@keyframes word-rise-rtl {
+  from {
+    transform: translateY(55%) rotate(-5deg);
+    clip-path: inset(0 0 100% 0);
+    filter: blur(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    clip-path: inset(-25% -25% -25% -25%);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/* A slow band of light travelling across the glowing word */
+@keyframes sweep {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
+}
+.light-sweep {
+  background: linear-gradient(110deg, #d9dfe6 0%, #d9dfe6 42%, #ffffff 50%, #d9dfe6 58%, #d9dfe6 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 22px rgba(221, 230, 240, 0.45));
+  animation: sweep 3.6s ease-in-out 1.8s infinite;
+}
+@keyframes rise {
+  from {
+    transform: translateY(105%);
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+.reveal-line {
+  display: block;
+  overflow: hidden;
+  padding-block: 0.06em;
+}
+.reveal-line > span {
+  display: block;
+  animation: rise 1.1s var(--ease-out-expo) backwards;
+}
+.fade-up {
+  animation: fade-up 0.9s var(--ease-out-expo) backwards;
+}
+
+@keyframes scroll-dot {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-50%, 14px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+}

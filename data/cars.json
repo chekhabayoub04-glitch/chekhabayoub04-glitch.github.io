@@ -1,0 +1,554 @@
+{
+  "_notice": "PLACEHOLDER DATA — prices, specs, mileage and descriptions are placeholders. Photos are licensed stock photos of each model (Wikimedia Commons, credited) until replaced with the dealer’s own photos.",
+  "cars": [
+    {
+      "id": "c01",
+      "slug": "dacia-duster-2025",
+      "brand": "Dacia",
+      "model": "Duster",
+      "trim": "Journey TCe 130",
+      "year": 2025,
+      "price_dzd": 4850000,
+      "fuel": "petrol",
+      "gearbox": "manual",
+      "engine": "1.2 TCe mild-hybrid",
+      "power_hp": 130,
+      "top_speed_kmh": 180,
+      "accel_0_100": 10.5,
+      "mileage_km": 0,
+      "color": {
+        "ar": "رمادي شيست",
+        "fr": "Gris Schiste",
+        "hex": "#5E6268"
+      },
+      "body_type": "suv",
+      "condition": "new",
+      "featured": true,
+      "in_video": true,
+      "images": [
+        {
+          "src": "/cars/dacia-duster-2025/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3ADacia_Duster_III_Hybrid_Automesse_Ludwigsburg_2024_IMG_1510.jpg"
+          }
+        },
+        {
+          "src": "/cars/dacia-duster-2025/rear.webp",
+          "kind": "rear",
+          "credit": {
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3ADacia_Duster_III_Hybrid_Automesse_Ludwigsburg_2024_IMG_1491.jpg"
+          }
+        },
+        {
+          "src": "/cars/dacia-duster-2025/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "La Revue Automobile",
+            "license": "CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3ADacia_Duster_III_(P1310)_01.png"
+          }
+        },
+        {
+          "src": "/cars/dacia-duster-2025/showroom-1.webp",
+          "kind": "gallery"
+        }
+      ],
+      "description_ar": "الجيل الجديد من داستر، أعلى وأمتن من قبل. محرك هجين خفيف اقتصادي في المدينة، ومساحة حقيقية للعائلة والرحلات. السيارة موجودة الآن في المعرض.",
+      "description_fr": "Le nouveau Duster, plus robuste et mieux équipé. Moteur mild-hybrid sobre en ville, vrai volume pour la famille et les longs trajets. Disponible dès maintenant au showroom."
+    },
+    {
+      "id": "c02",
+      "slug": "vw-golf-8-gti-2023",
+      "brand": "Volkswagen",
+      "model": "Golf 8",
+      "trim": "GTI 2.0 TSI",
+      "year": 2023,
+      "price_dzd": 9500000,
+      "fuel": "petrol",
+      "gearbox": "automatic",
+      "engine": "2.0 TSI",
+      "power_hp": 245,
+      "top_speed_kmh": 250,
+      "accel_0_100": 6.2,
+      "mileage_km": 28000,
+      "color": {
+        "ar": "رمادي مون ستون",
+        "fr": "Gris Moonstone",
+        "hex": "#8C9196"
+      },
+      "body_type": "hatchback",
+      "condition": "used",
+      "featured": true,
+      "in_video": true,
+      "images": [
+        {
+          "src": "/cars/vw-golf-8-gti-2023/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "OWS Photography",
+            "license": "CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AVolkswagen_Golf_GTI_(Mk_VIII)_Washington_DC_Metro_Area%2C_USA_(3).jpg"
+          }
+        },
+        {
+          "src": "/cars/vw-golf-8-gti-2023/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Y.Leclercq",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AVolkswagen_Golf_VIII_phase_2_(int%C3%A9rieur).jpg"
+          }
+        },
+        {
+          "src": "/cars/vw-golf-8-gti-2023/showroom-1.webp",
+          "kind": "gallery"
+        }
+      ],
+      "description_ar": "أسطورة الهاتشباك الرياضية. ناقل DSG سريع، تعليق متوازن ومقصورة رقمية بالكامل. حالة ممتازة وصيانة موثّقة.",
+      "description_fr": "La référence des compactes sportives. Boîte DSG rapide, châssis équilibré et cockpit entièrement digital. Très bon état, entretien suivi."
+    },
+    {
+      "id": "c03",
+      "slug": "vw-tayron-2025",
+      "brand": "Volkswagen",
+      "model": "Tayron",
+      "trim": "R-Line 2.0 TSI 4Motion",
+      "year": 2025,
+      "price_dzd": 13500000,
+      "fuel": "petrol",
+      "gearbox": "automatic",
+      "engine": "2.0 TSI 4Motion",
+      "power_hp": 265,
+      "top_speed_kmh": 240,
+      "accel_0_100": 6.6,
+      "mileage_km": 0,
+      "color": {
+        "ar": "أبيض أوريكس",
+        "fr": "Blanc Oryx",
+        "hex": "#ECECE8"
+      },
+      "body_type": "suv",
+      "condition": "new",
+      "featured": true,
+      "in_video": true,
+      "images": [
+        {
+          "src": "/cars/vw-tayron-2025/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "Alexander Migl",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AVolkswagen_Tayron_II_eHybrid_DSC_7824.jpg"
+          }
+        },
+        {
+          "src": "/cars/vw-tayron-2025/rear.webp",
+          "kind": "rear",
+          "credit": {
+            "author": "Alexander Migl",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AVolkswagen_Tayron_II_eHybrid_DSC_7832.jpg"
+          }
+        },
+        {
+          "src": "/cars/vw-tayron-2025/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AVolkswagen_Tayron_Auto_Zuerich_2024_DSC_6900.jpg"
+          }
+        },
+        {
+          "src": "/cars/vw-tayron-2025/showroom-1.webp",
+          "kind": "gallery"
+        },
+        {
+          "src": "/cars/vw-tayron-2025/showroom-2.webp",
+          "kind": "gallery"
+        }
+      ],
+      "description_ar": "SUV كبيرة بلمسة فاخرة: شريط ضوئي أمامي، إضاءة داخلية محيطية وشاشة وسطية كبيرة. دفع رباعي 4Motion لكل الطرق.",
+      "description_fr": "Grand SUV au caractère premium : signature lumineuse, éclairage d'ambiance et grand écran central. Transmission intégrale 4Motion."
+    },
+    {
+      "id": "c04",
+      "slug": "renault-clio-5-2024",
+      "brand": "Renault",
+      "model": "Clio 5",
+      "trim": "Evolution TCe 90",
+      "year": 2024,
+      "price_dzd": 3900000,
+      "fuel": "petrol",
+      "gearbox": "manual",
+      "engine": "1.0 TCe",
+      "power_hp": 90,
+      "top_speed_kmh": 178,
+      "accel_0_100": 12.2,
+      "mileage_km": 0,
+      "color": {
+        "ar": "أبيض جليدي",
+        "fr": "Blanc Glacier",
+        "hex": "#EDEDEA"
+      },
+      "body_type": "city",
+      "condition": "new",
+      "featured": false,
+      "in_video": false,
+      "images": [
+        {
+          "src": "/cars/renault-clio-5-2024/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "M 93",
+            "license": "CC BY-SA 3.0 DE",
+            "url": "https://commons.wikimedia.org/wiki/File%3ARenault_Clio_R.S._Line_(V)_%E2%80%93_f_17102021.jpg"
+          }
+        },
+        {
+          "src": "/cars/renault-clio-5-2024/rear.webp",
+          "kind": "rear",
+          "credit": {
+            "author": "M 93",
+            "license": "CC BY-SA 3.0 DE",
+            "url": "https://commons.wikimedia.org/wiki/File%3ARenault_Clio_R.S._Line_(V)_%E2%80%93_h_17102021.jpg"
+          }
+        },
+        {
+          "src": "/cars/renault-clio-5-2024/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Damian B Oh",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3ARenault_Clio_Techno_BF_Black_3D_Fabric_and_Velvet_(1).jpg"
+          }
+        }
+      ],
+      "description_ar": "السيارة التي يعرفها الجميع في الجزائر. خفيفة في المدينة، اقتصادية في الوقود، وقطع غيارها متوفرة في كل مكان.",
+      "description_fr": "La citadine que tout le monde connaît en Algérie. Agile en ville, sobre, et des pièces disponibles partout."
+    },
+    {
+      "id": "c05",
+      "slug": "peugeot-208-2024",
+      "brand": "Peugeot",
+      "model": "208",
+      "trim": "Allure 1.2 PureTech",
+      "year": 2024,
+      "price_dzd": 4200000,
+      "fuel": "petrol",
+      "gearbox": "automatic",
+      "engine": "1.2 PureTech",
+      "power_hp": 100,
+      "top_speed_kmh": 188,
+      "accel_0_100": 10.9,
+      "mileage_km": 12000,
+      "color": {
+        "ar": "أصفر فارو",
+        "fr": "Jaune Faro",
+        "hex": "#E2B33C"
+      },
+      "body_type": "city",
+      "condition": "used",
+      "featured": false,
+      "in_video": false,
+      "images": [
+        {
+          "src": "/cars/peugeot-208-2024/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "M 93",
+            "license": "CC BY-SA 3.0 DE",
+            "url": "https://commons.wikimedia.org/wiki/File%3APeugeot_208_PureTech_130_EAT8_Allure_GT-Line_(II)_%E2%80%93_f_17102021.jpg"
+          }
+        },
+        {
+          "src": "/cars/peugeot-208-2024/profile.webp",
+          "kind": "profile",
+          "credit": {
+            "author": "M 93",
+            "license": "CC BY-SA 3.0 DE",
+            "url": "https://commons.wikimedia.org/wiki/File%3APeugeot_208_PureTech_130_EAT8_Allure_GT-Line_(II)_%E2%80%93_s_17102021.jpg"
+          }
+        },
+        {
+          "src": "/cars/peugeot-208-2024/rear.webp",
+          "kind": "rear",
+          "credit": {
+            "author": "M 93",
+            "license": "CC BY-SA 3.0 DE",
+            "url": "https://commons.wikimedia.org/wiki/File%3APeugeot_208_PureTech_130_EAT8_Allure_GT-Line_(II)_%E2%80%93_h_17102021.jpg"
+          }
+        },
+        {
+          "src": "/cars/peugeot-208-2024/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Tokumeigakarinoaoshima",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3APeugeot_208_GT_(5BA-P21HN05)_interior.jpg"
+          }
+        }
+      ],
+      "description_ar": "تصميم جريء ولوحة قيادة i-Cockpit ثلاثية الأبعاد. أوتوماتيكية ومريحة في الزحام، مستعملة بعناية من مالك واحد.",
+      "description_fr": "Design affirmé et i-Cockpit 3D. Automatique, confortable dans les bouchons, première main soignée."
+    },
+    {
+      "id": "c06",
+      "slug": "fiat-tipo-2024",
+      "brand": "Fiat",
+      "model": "Tipo",
+      "trim": "Life 1.6 Multijet 5p",
+      "year": 2024,
+      "price_dzd": 3650000,
+      "fuel": "diesel",
+      "gearbox": "manual",
+      "engine": "1.6 Multijet",
+      "power_hp": 130,
+      "top_speed_kmh": 200,
+      "accel_0_100": 9.8,
+      "mileage_km": 0,
+      "color": {
+        "ar": "برونزي",
+        "fr": "Bronze Magnetico",
+        "hex": "#8C7A66"
+      },
+      "body_type": "hatchback",
+      "condition": "new",
+      "featured": false,
+      "in_video": false,
+      "images": [
+        {
+          "src": "/cars/fiat-tipo-2024/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "Raf24",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AFiat_Tipo%2C_WAW(I).jpg"
+          }
+        },
+        {
+          "src": "/cars/fiat-tipo-2024/rear.webp",
+          "kind": "rear",
+          "credit": {
+            "author": "Dorieo",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AFiat_Tipo_(type_356)_en_Valencia.jpg"
+          }
+        },
+        {
+          "src": "/cars/fiat-tipo-2024/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Wlodek k1",
+            "license": "CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AFiat_Tipo_1%2C4_HB_interior%2C_01.jpg"
+          }
+        }
+      ],
+      "description_ar": "هاتشباك عملية بخمسة أبواب. صندوق واسع، ديزل قليل الاستهلاك، وسعر يجعلها من أذكى الخيارات للعائلة.",
+      "description_fr": "Compacte 5 portes pratique. Grand coffre, diesel sobre et un prix qui en fait l’un des choix les plus malins pour la famille."
+    },
+    {
+      "id": "c07",
+      "slug": "hyundai-tucson-2024",
+      "brand": "Hyundai",
+      "model": "Tucson",
+      "trim": "Executive 1.6 CRDi",
+      "year": 2024,
+      "price_dzd": 7900000,
+      "fuel": "diesel",
+      "gearbox": "automatic",
+      "engine": "1.6 CRDi",
+      "power_hp": 136,
+      "top_speed_kmh": 185,
+      "accel_0_100": 11.4,
+      "mileage_km": 18000,
+      "color": {
+        "ar": "أبيض أطلس",
+        "fr": "Blanc Atlas",
+        "hex": "#EEEEEC"
+      },
+      "body_type": "suv",
+      "condition": "used",
+      "featured": true,
+      "in_video": false,
+      "images": [
+        {
+          "src": "/cars/hyundai-tucson-2024/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "Alexander Migl",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AHyundai_Tucson_(NX4)_1X7A0424.jpg"
+          }
+        },
+        {
+          "src": "/cars/hyundai-tucson-2024/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Ethan Llamas",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AHyundai_Tucson_NX4_1.6_GLS_HEV_-_interior_view.jpg"
+          }
+        }
+      ],
+      "description_ar": "مصابيح أمامية مخفية في الشبك وتصميم لا يشبه أحداً. ديزل أوتوماتيك مريح على الطريق السريع، بتجهيزات كاملة.",
+      "description_fr": "Feux cachés dans la calandre et un style unique. Diesel automatique confortable sur autoroute, équipement complet."
+    },
+    {
+      "id": "c08",
+      "slug": "chery-tiggo-7-pro-2025",
+      "brand": "Chery",
+      "model": "Tiggo 7 Pro",
+      "trim": "Luxury 1.6 TGDI",
+      "year": 2025,
+      "price_dzd": 5400000,
+      "fuel": "petrol",
+      "gearbox": "automatic",
+      "engine": "1.6 TGDI",
+      "power_hp": 197,
+      "top_speed_kmh": 200,
+      "accel_0_100": 8.9,
+      "mileage_km": 0,
+      "color": {
+        "ar": "رمادي",
+        "fr": "Gris",
+        "hex": "#7D8085"
+      },
+      "body_type": "suv",
+      "condition": "new",
+      "featured": false,
+      "in_video": false,
+      "images": [
+        {
+          "src": "/cars/chery-tiggo-7-pro-2025/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "Throwawayacc222",
+            "license": "CC0",
+            "url": "https://commons.wikimedia.org/wiki/File%3A2023_Chery_Tiggo7_Pro_Max_grey_front.jpg"
+          }
+        },
+        {
+          "src": "/cars/chery-tiggo-7-pro-2025/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Jengtingchen",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AChery_Tiggo_7_II_007.jpg"
+          }
+        }
+      ],
+      "description_ar": "تجهيزات فاخرة بسعر معقول: سقف بانورامي، شاشتان كبيرتان وكاميرا 360°. أوتوماتيك بمحرك تيربو قوي.",
+      "description_fr": "Équipement haut de gamme à prix raisonnable : toit panoramique, double écran et caméra 360°. Turbo automatique."
+    },
+    {
+      "id": "c09",
+      "slug": "toyota-hilux-2024",
+      "brand": "Toyota",
+      "model": "Hilux",
+      "trim": "Double Cab 2.4 D-4D 4x4",
+      "year": 2024,
+      "price_dzd": 8900000,
+      "fuel": "diesel",
+      "gearbox": "manual",
+      "engine": "2.4 D-4D",
+      "power_hp": 150,
+      "top_speed_kmh": 170,
+      "accel_0_100": 12.8,
+      "mileage_km": 35000,
+      "color": {
+        "ar": "أبيض",
+        "fr": "Blanc",
+        "hex": "#F1F1EE"
+      },
+      "body_type": "pickup",
+      "condition": "used",
+      "featured": false,
+      "in_video": false,
+      "images": [
+        {
+          "src": "/cars/toyota-hilux-2024/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "Chanokchon",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3A2021_Toyota_Hilux_Revo_GR_Sport_Double-Cab_2.8_4x4.jpg"
+          }
+        },
+        {
+          "src": "/cars/toyota-hilux-2024/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Ethan Llamas",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AToyota_Hilux_GUN126_2.8_GR_Sport_-_interior_view.jpg"
+          }
+        }
+      ],
+      "description_ar": "البيك آب التي لا تتعب. دفع رباعي حقيقي للعمل والصحراء، كابينة مزدوجة وموثوقية تويوتا المعروفة.",
+      "description_fr": "Le pick-up infatigable. Vrai 4x4 pour le travail comme pour le désert, double cabine et fiabilité Toyota."
+    },
+    {
+      "id": "c10",
+      "slug": "mercedes-c-class-2022",
+      "brand": "Mercedes-Benz",
+      "model": "C-Class",
+      "trim": "C 200 AMG Line",
+      "year": 2022,
+      "price_dzd": 14500000,
+      "fuel": "petrol",
+      "gearbox": "automatic",
+      "engine": "1.5 Turbo EQ Boost",
+      "power_hp": 204,
+      "top_speed_kmh": 246,
+      "accel_0_100": 7.3,
+      "mileage_km": 41000,
+      "color": {
+        "ar": "أبيض قطبي",
+        "fr": "Blanc Polaire",
+        "hex": "#F1F1EF"
+      },
+      "body_type": "sedan",
+      "condition": "used",
+      "featured": true,
+      "in_video": false,
+      "images": [
+        {
+          "src": "/cars/mercedes-c-class-2022/exterior.webp",
+          "kind": "exterior",
+          "credit": {
+            "author": "Tokumeigakarinoaoshima",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AMercedes-Benz_C_200_AVANTGARDE_(W206)_front.jpg"
+          }
+        },
+        {
+          "src": "/cars/mercedes-c-class-2022/rear.webp",
+          "kind": "rear",
+          "credit": {
+            "author": "Tokumeigakarinoaoshima",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AMercedes-Benz_C_200_AVANTGARDE_(W206)_rear.jpg"
+          }
+        },
+        {
+          "src": "/cars/mercedes-c-class-2022/interior.webp",
+          "kind": "interior",
+          "credit": {
+            "author": "Tokumeigakarinoaoshima",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File%3AMercedes-Benz_C_200_AVANTGARDE_(W206)_interior.jpg"
+          }
+        }
+      ],
+      "description_ar": "أناقة مرسيدس بباقة AMG Line. شاشة MBUX عمودية، إضاءة محيطية وراحة لا تُقارن في المسافات الطويلة.",
+      "description_fr": "L'élégance Mercedes en finition AMG Line. Écran MBUX vertical, éclairage d'ambiance et un confort incomparable sur long trajet."
+    }
+  ]
+}

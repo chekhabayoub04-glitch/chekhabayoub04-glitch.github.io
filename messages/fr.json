@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "title": "MHD AUTO — Showroom automobile à Alger | Neuf & occasion premium",
+    "description": "Showroom MHD AUTO à Alger : véhicules neufs et d’occasion sélectionnés, expertisés et garantis. Financement, reprise et livraison dans les 58 wilayas.",
+    "carsTitle": "Nos véhicules disponibles",
+    "carsDescription": "Découvrez la sélection MHD AUTO : citadines, compactes, SUV, pick-up et berlines premium. Filtrez par marque, budget, motorisation et année.",
+    "carDescription": "{car} {year} — {price}. {fuel}, {gearbox}, {power} ch. Disponible maintenant chez MHD AUTO."
+  },
+  "a11y": {
+    "skip": "Aller au contenu",
+    "menu": "Menu",
+    "close": "Fermer",
+    "language": "Langue",
+    "videoLabel": "Images du showroom MHD AUTO"
+  },
+  "nav": {
+    "cars": "Voitures",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact",
+    "request": "Demander"
+  },
+  "hero": {
+    "eyebrow": "Showroom automobile — Alger",
+    "line1": "Votre prochaine voiture",
+    "line2": "vous attend sous",
+    "glow": "la lumière",
+    "lede": "Neuf et occasion premium, choisis un à un, expertisés et garantis. Financement, reprise et livraison dans les 58 wilayas.",
+    "ctaCars": "Découvrir la collection",
+    "ctaWhatsapp": "Nous écrire",
+    "statCars": "voitures au showroom",
+    "statWilayas": "wilayas livrées",
+    "statWarranty": "mois de garantie",
+    "scroll": "Défiler pour découvrir",
+    "live": "LIVE · SHOWROOM",
+    "chapter": "La façade"
+  },
+  "build": {
+    "index": "02",
+    "kicker": "Performance",
+    "title": "La lumière s’allume.",
+    "lines": [
+      "Les phares s’éveillent, un à un.",
+      "Chaque véhicule est expertisé avant d’entrer au showroom.",
+      "Il ne lui manque plus que vous."
+    ],
+    "unit": "KM/H",
+    "counterLabel": "Vitesse de pointe",
+    "caption": "Images tournées dans notre showroom"
+  },
+  "inside": {
+    "index": "03",
+    "kicker": "Habitacle",
+    "title": "Des détails qui se ressentent.",
+    "callouts": [
+      "Poste de conduite 100 % digital",
+      "Éclairage d’ambiance",
+      "Cuir et matériaux nobles"
+    ]
+  },
+  "showroom": {
+    "kicker": "La collection",
+    "title": "Choisissez votre voiture",
+    "lede": "Une voiture à la fois, sous les projecteurs. Cliquez sur la photo pour l’extérieur, le profil et l’habitacle.",
+    "prev": "Voiture précédente",
+    "next": "Voiture suivante",
+    "details": "Voir la fiche",
+    "whatsapp": "Demander sur WhatsApp",
+    "viewAll": "Toute la collection",
+    "open": "Voir les photos",
+    "counter": "{current} / {total}"
+  },
+  "specs": {
+    "engine": "Moteur",
+    "power": "Puissance",
+    "powerValue": "{hp} ch",
+    "year": "Année",
+    "fuel": "Carburant",
+    "gearbox": "Boîte",
+    "mileage": "Kilométrage",
+    "topSpeed": "Vitesse maxi",
+    "accel": "0 → 100 km/h",
+    "accelValue": "{s} s",
+    "color": "Couleur",
+    "body": "Catégorie",
+    "condition": "État",
+    "price": "Prix",
+    "km": "{km} km"
+  },
+  "values": {
+    "fuel": {
+      "petrol": "Essence",
+      "diesel": "Diesel",
+      "hybrid": "Hybride",
+      "electric": "Électrique"
+    },
+    "gearbox": {
+      "manual": "Manuelle",
+      "automatic": "Automatique"
+    },
+    "body": {
+      "city": "Citadine",
+      "hatchback": "Compacte",
+      "sedan": "Berline",
+      "suv": "SUV",
+      "pickup": "Pick-up"
+    },
+    "condition": {
+      "new": "Neuve",
+      "used": "Occasion"
+    }
+  },
+  "views": {
+    "exterior": "Extérieur",
+    "profile": "Profil",
+    "rear": "Arrière",
+    "interior": "Intérieur",
+    "gallery": "Au showroom"
+  },
+  "inventory": {
+    "kicker": "Le stock",
+    "title": "{count} véhicules disponibles",
+    "search": "Marque, modèle, finition…",
+    "filters": "Filtres",
+    "type": "Catégorie",
+    "brand": "Marque",
+    "fuel": "Carburant",
+    "gearbox": "Boîte",
+    "condition": "État",
+    "year": "Année min.",
+    "price": "Prix max.",
+    "any": "Tous",
+    "reset": "Réinitialiser",
+    "sort": "Trier",
+    "sortOptions": {
+      "recommended": "Recommandées",
+      "priceAsc": "Prix croissant",
+      "priceDesc": "Prix décroissant",
+      "yearDesc": "Plus récentes",
+      "mileageAsc": "Moins de km"
+    },
+    "results": "{count} résultat(s)",
+    "empty": "Aucun véhicule ne correspond pour le moment. Élargissez vos critères ou contactez-nous : nous pouvons le trouver pour vous.",
+    "details": "Détails",
+    "whatsapp": "WhatsApp",
+    "showFilters": "Afficher les filtres",
+    "hideFilters": "Masquer les filtres",
+    "placeholderNote": "Prix et caractéristiques indicatifs, susceptibles d’évoluer."
+  },
+  "stats": [
+    {
+      "value": "10",
+      "label": "voitures au showroom"
+    },
+    {
+      "value": "58",
+      "label": "wilayas livrées"
+    },
+    {
+      "value": "12",
+      "label": "mois de garantie occasion"
+    },
+    {
+      "value": "24/7",
+      "label": "réponse sur WhatsApp"
+    }
+  ],
+  "journey": {
+    "kicker": "Notre méthode",
+    "title": "Six étapes, du showroom à la route.",
+    "hint": "Faites défiler",
+    "steps": [
+      {
+        "title": "Choisir",
+        "text": "Sur le site ou au showroom, un conseiller vous oriente selon votre usage et votre budget — sans pression."
+      },
+      {
+        "title": "Expertiser",
+        "text": "Chaque occasion passe un contrôle complet : moteur, boîte, carrosserie, électronique et historique."
+      },
+      {
+        "title": "Essayer",
+        "text": "Prenez le volant le temps qu’il faut, au créneau qui vous convient."
+      },
+      {
+        "title": "Financer",
+        "text": "Apport souple et mensualités adaptées, avec nos banques partenaires."
+      },
+      {
+        "title": "Reprendre",
+        "text": "Votre véhicule actuel est estimé le jour même et déduit du prix."
+      },
+      {
+        "title": "Prendre la route",
+        "text": "Remise des clés au showroom, ou livraison sécurisée dans votre wilaya."
+      }
+    ]
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Bien plus qu’une vente.",
+    "lede": "De la première question au service après-vente, un interlocuteur unique vous accompagne.",
+    "items": [
+      {
+        "key": "financing",
+        "title": "Financement sur mesure",
+        "text": "Dossier simplifié, apport souple et jusqu’à 60 mois avec nos banques partenaires. Conditions selon étude."
+      },
+      {
+        "key": "tradein",
+        "title": "Reprise immédiate",
+        "text": "Présentez votre véhicule : estimation transparente le jour même, valeur déduite de votre achat."
+      },
+      {
+        "key": "warranty",
+        "title": "Garantie",
+        "text": "Garantie constructeur sur le neuf ; garantie MHD 12 mois moteur et boîte sur l’occasion."
+      },
+      {
+        "key": "delivery",
+        "title": "Livraison 58 wilayas",
+        "text": "D’Adrar à El Tarf, livraison en camion fermé et assuré, jusqu’à votre porte."
+      }
+    ]
+  },
+  "about": {
+    "kicker": "À propos",
+    "title": "Un vrai showroom. De vraies voitures.",
+    "text": "MHD AUTO, c’est un showroom au cœur d’Alger et une conviction : chaque voiture doit être choisie, contrôlée et présentée telle qu’elle est. Pas de mauvaise surprise — venez la voir de vos propres yeux.",
+    "hours": "Horaires",
+    "days": {
+      "sat-thu": "Samedi — Jeudi",
+      "fri": "Vendredi"
+    },
+    "closed": "Fermé",
+    "address": "Adresse",
+    "directions": "Itinéraire Google Maps",
+    "mapPlaceholder": "Carte Google — ajoutée dès que l'adresse est confirmée"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Parlons de votre prochaine voiture.",
+    "lede": "Laissez-nous votre numéro, un conseiller vous rappelle rapidement. Ou écrivez-nous directement sur WhatsApp.",
+    "name": "Nom complet",
+    "phone": "Téléphone / WhatsApp",
+    "email": "E-mail (facultatif)",
+    "car": "Voiture",
+    "carNone": "Pas encore choisi",
+    "date": "Date souhaitée pour l'essai",
+    "message": "Votre message",
+    "submit": "Envoyer ma demande",
+    "sending": "Envoi…",
+    "success": "Demande reçue. Confirmez-la sur WhatsApp pour une réponse plus rapide.",
+    "confirmWa": "Confirmer sur WhatsApp",
+    "error": "Envoi impossible. Vérifiez le nom et le téléphone ou écrivez-nous sur WhatsApp.",
+    "required": "Champ obligatoire",
+    "privacy": "Vos informations servent uniquement à répondre à votre demande.",
+    "call": "Appeler",
+    "whatsapp": "WhatsApp",
+    "email_label": "E-mail",
+    "testDrive": "Réserver un essai",
+    "waGeneric": "Bonjour MHD AUTO, je souhaite me renseigner sur une voiture.",
+    "waCar": "Bonjour MHD AUTO, je suis intéressé(e) par {car} ({price}). Lien : {url}",
+    "waLead": "Nouvelle demande du site\nNom : {name}\nTéléphone : {phone}\nVoiture : {car}\nDate : {date}\nMessage : {message}"
+  },
+  "detail": {
+    "back": "Toutes les voitures",
+    "overview": "Présentation",
+    "specs": "Fiche technique",
+    "reserve": "Réserver un essai",
+    "reserveLede": "Choisissez un jour, on vous confirme le rendez-vous dans la journée.",
+    "similar": "Vous aimerez aussi",
+    "placeholder": "Photos illustratives du modèle — remplacées par les photos réelles du véhicule",
+    "inVideo": "Visible dans la vidéo du showroom",
+    "credit": "Photo : {author} · {license}"
+  },
+  "floating": {
+    "whatsapp": "WhatsApp",
+    "call": "Appeler",
+    "request": "Demander"
+  },
+  "footer": {
+    "tagline": "Showroom automobile à Alger — neuf et occasion premium, achat, vente et reprise.",
+    "rights": "Tous droits réservés.",
+    "notice": "Prix et caractéristiques indicatifs, susceptibles d'évoluer sans préavis."
+  },
+  "film": {
+    "rec": "REC",
+    "jump": "Aller au plan",
+    "chapters": {
+      "facade": "La façade",
+      "sign": "L’enseigne",
+      "showroom": "Le showroom"
+    }
+  },
+  "intro": {
+    "scroll": "Faites défiler pour entrer",
+    "tagline": "Showroom automobile",
+    "city": "Alger · Algérie",
+    "brands": "Les marques du showroom",
+    "cta": "Entrer dans le showroom"
+  },
+  "tour": {
+    "index": "03",
+    "kicker": "Le showroom",
+    "title": "Entrez. Prenez votre temps.",
+    "intro": "Un espace pensé comme une galerie : lumière maîtrisée, véhicules préparés, conseillers disponibles. Ici, on vous accompagne de l’essai jusqu’à la remise des clés.",
+    "servicesTitle": "Nos services",
+    "step": "Service {n} / {total}",
+    "visitTitle": "Venez nous voir.",
+    "visitText": "Sans rendez-vous aux heures d’ouverture — ou réservez un créneau, on vous attend.",
+    "cta": "Réserver une visite",
+    "hours": "Horaires",
+    "address": "Adresse",
+    "caption": "Visite du showroom"
+  }
+}
