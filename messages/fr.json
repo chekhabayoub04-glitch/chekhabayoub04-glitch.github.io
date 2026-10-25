@@ -298,7 +298,8 @@
     "tagline": "Showroom automobile",
     "city": "Alger · Algérie",
     "brands": "Les marques du showroom",
-    "cta": "Entrer dans le showroom"
+    "cta": "Entrer dans le showroom",
+    "skip": "Passer"
   },
   "tour": {
     "index": "03",

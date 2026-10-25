@@ -14,7 +14,8 @@
     "cars:images": "node scripts/optimize-car-images.mjs",
     "video:analyze": "node scripts/analyze-video.mjs",
     "cars:commons": "node scripts/fetch-commons-photos.mjs",
-    "postbuild": "node scripts/post-export.mjs"
+    "postbuild": "node scripts/post-export.mjs",
+    "intro:encode": "node scripts/encode-intro.mjs"
   },
   "dependencies": {
     "gsap": "^3.15.0",

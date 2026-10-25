@@ -10,7 +10,7 @@ const SRC = path.join(ROOT, "assets/video");
 const DST = path.join(ROOT, "public/media");
 
 fs.rmSync(DST, { recursive: true, force: true });
-for (const dir of ["chapters", "processed", "frames", "posters"]) {
+for (const dir of ["chapters", "processed", "frames", "posters", "intro"]) {
   fs.cpSync(path.join(SRC, dir), path.join(DST, dir), {
     recursive: true,
     filter: (p) => !p.endsWith(".gitkeep"),

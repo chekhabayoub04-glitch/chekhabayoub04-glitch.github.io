@@ -288,6 +288,18 @@
   animation: fade-up 0.9s var(--ease-out-expo) backwards;
 }
 
+/* Intro film: hold the hero entrance until the film hands over; returning visitors skip it before first paint. */
+html.intro-on {
+  overflow: hidden;
+}
+html.intro-on .word,
+html.intro-on .fade-up {
+  animation-play-state: paused;
+}
+html.intro-off #intro {
+  display: none;
+}
+
 @keyframes scroll-dot {
   0% {
     transform: translate(-50%, 0);

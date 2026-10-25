@@ -9,6 +9,7 @@ import { hero } from "@/lib/video";
 import { alternates } from "@/lib/paths";
 import FilmBackground from "@/components/FilmBackground";
 import SmoothScroll from "@/components/SmoothScroll";
+import IntroFilm from "@/components/IntroFilm";
 import TextFX from "@/components/TextFX";
 import ScrollProgress from "@/components/ScrollProgress";
 import Nav from "@/components/Nav";
@@ -59,9 +60,10 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations("a11y");
+  const tIntro = await getTranslations("intro");
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className={`${cairo.variable} ${bigShoulders.variable} ${archivo.variable}`}>
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className={`${cairo.variable} ${bigShoulders.variable} ${archivo.variable}`} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider>
           <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[100] focus:bg-bone focus:px-4 focus:py-2 focus:text-ink">
@@ -69,6 +71,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
           </a>
           <FilmBackground hero={hero} />
           <SmoothScroll />
+          <IntroFilm skip={tIntro("skip")} enter={tIntro("cta")} />
           <TextFX />
           <ScrollProgress />
           <Nav />

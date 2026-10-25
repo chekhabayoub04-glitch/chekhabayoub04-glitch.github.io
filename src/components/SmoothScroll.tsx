@@ -16,6 +16,11 @@ declare global {
 export default function SmoothScroll() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    // Phones: the address bar showing/hiding resizes the viewport — don't re-measure the 460svh hero on every swipe.
+    ScrollTrigger.config({ ignoreMobileResize: true });
+    // Always open at the hero: the browser restoring an old position landed visitors mid-film or mid-page.
+    history.scrollRestoration = "manual";
+    if (!location.hash) window.scrollTo(0, 0);
     if (prefersReducedMotion()) return;
 
     const lenis = new Lenis({ lerp: 0.11, smoothWheel: true, anchors: { offset: -72 } });
