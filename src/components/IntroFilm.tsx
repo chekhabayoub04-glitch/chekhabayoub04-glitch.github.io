@@ -19,7 +19,7 @@ const load = `(function(){if(!document.documentElement.classList.contains("intro
 v.muted=true;v.src=matchMedia("(orientation: portrait)").matches?"${SRC.portrait}":"${SRC.landscape}";var p=v.play();p&&p.catch(function(){})})()`;
 
 /** Opening film (black → headlights → dust → push through the fog), played once per session above the hero. */
-export default function IntroFilm({ skip, enter }: { skip: string; enter: string }) {
+export default function IntroFilm({ enter }: { enter: string }) {
   const video = useRef<HTMLVideoElement>(null);
   const [state, setState] = useState<"playing" | "tap" | "leaving" | "gone">("playing");
 
@@ -73,9 +73,7 @@ export default function IntroFilm({ skip, enter }: { skip: string; enter: string
     if (v.error) v.dispatchEvent(new Event("error"));
     play();
     timers.push(window.setTimeout(() => v.readyState < 2 && !v.paused && finish(), START_TIMEOUT));
-    const w = window as Window & { __skipIntro?: () => void; __playIntro?: () => void };
-    w.__skipIntro = finish;
-    w.__playIntro = () => void v.play().then(() => setState("playing"), finish);
+    (window as Window & { __playIntro?: () => void }).__playIntro = () => void v.play().then(() => setState("playing"), finish);
 
     return () => {
       done = true;
@@ -127,13 +125,6 @@ export default function IntroFilm({ skip, enter }: { skip: string; enter: string
             </span>
           </button>
         )}
-        <button
-          type="button"
-          onClick={() => (window as Window & { __skipIntro?: () => void }).__skipIntro?.()}
-          className="absolute bottom-[max(24px,env(safe-area-inset-bottom))] end-5 min-h-11 rounded-full border border-white/25 bg-black/40 px-5 text-xs font-semibold tracking-[.2em] text-white/80 backdrop-blur transition-colors hover:text-white rtl:tracking-normal"
-        >
-          {skip}
-        </button>
       </div>
     </>
   );

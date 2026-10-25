@@ -71,7 +71,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
           </a>
           <FilmBackground hero={hero} />
           <SmoothScroll />
-          <IntroFilm skip={tIntro("skip")} enter={tIntro("cta")} />
+          <IntroFilm enter={tIntro("cta")} />
           <TextFX />
           <ScrollProgress />
           <Nav />
