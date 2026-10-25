@@ -82,9 +82,17 @@ export default function HeroCinema({ hero, brands, copy, whatsapp }: { hero: Her
       off();
     };
     const intents = ["wheel", "touchstart", "keydown", "pointerdown", "scroll"] as const;
-    const off = () => intents.forEach((e) => window.removeEventListener(e, kick));
-    intents.forEach((e) => window.addEventListener(e, kick, { once: true, passive: true }));
-    const idle = window.setTimeout(() => ("requestIdleCallback" in window ? requestIdleCallback(kick) : kick()), 3500);
+    const off = () => {
+      intents.forEach((e) => window.removeEventListener(e, kick));
+      window.removeEventListener("intro:done", kick);
+    };
+    // While the intro film plays it gets the whole connection; the frames follow once it hands over.
+    if (document.documentElement.classList.contains("intro-on")) window.addEventListener("intro:done", kick);
+    else intents.forEach((e) => window.addEventListener(e, kick, { once: true, passive: true }));
+    const idle = window.setTimeout(
+      () => !document.documentElement.classList.contains("intro-on") && ("requestIdleCallback" in window ? requestIdleCallback(kick) : kick()),
+      3500,
+    );
     const onResize = () => player.resize();
     window.addEventListener("resize", onResize);
 
