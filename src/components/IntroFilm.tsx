@@ -46,11 +46,11 @@ export default function IntroFilm({ skip, enter }: { skip: string; enter: string
       }
       window.scrollTo(0, 0);
       root.classList.remove("intro-on"); // hero headline starts rising as the fog clears
-      window.dispatchEvent(new Event("intro:done")); // hero frame sequence may start downloading now
       setState("leaving");
       timers.push(window.setTimeout(() => {
         setState("gone");
         window.__lenis?.start();
+        window.dispatchEvent(new Event("intro:done")); // hero frames start only once the fog has cleared, never mid-fade
       }, FADE));
     };
 
